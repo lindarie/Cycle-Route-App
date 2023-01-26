@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :maps
   resources :trails
   get 'admin' => 'admin#index'
   root to: "users#index"
